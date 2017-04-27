@@ -101,6 +101,7 @@ struct mylist_iterator {
         : ptr(p) {
 
         }
+    /* return value should be a reference since it should be a lvalue */
     Item& operator*() const {return *ptr;}
     Item* operator->() const {return ptr;}
     /* access item of list */
